@@ -10,9 +10,12 @@
     <meta name="author" content="">
     <style>
     table.line{line-height:120%}
+	input[type=number]{
+    width: 100px;
+} 
 	
 	</style>
-    <title>Clean Blog - Sample Post</title>
+    <title>FindPage</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +25,7 @@
 
 </head>
 
-<body>
+<body background="img/wh_bg.jpg">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -69,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                      <h1>ค้นหาเพื่อนร่วมห้อง</h1>
+                      <h1>Find Page</h1>
                       <h2 class="subheading">เลือกคุณสมบัติ </h2>
                     </div>
                 </div>
@@ -80,8 +83,76 @@
     <!-- Post Content -->
     <article>
         <div class="container">
-            <div class="row">
-               
+            <div class="row">              	
+				<div class="col-xs-6 col-md-4" style="border:solid">
+                	<p style="font:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> Location </p>
+                    <div> <img src="img/mapfind.PNG" width="300"></div>
+                    <p> 
+                    	Area 
+                    </p>
+                    	<div>
+                        	<select>
+                                  <option value="bangmod">Bangmod</option>
+                                  <option value="thungkru">Thungkru</option>
+                            </select>
+                        </div>
+                	<p>
+                    	Sex 
+                    </p>
+                	<ul class="nav nav-pills">
+                          	<li role="presentadasftion" class="active" style="border:#000000"><a href="#">Male</a>
+                            </li>
+                         <li role="presentation"><a href="#">Female</a></li>
+                                                                 
+                    </ul>
+                    <p> Age</p>
+                    	<input type="number" name="age" min="18"> to
+                        <input type="number" name="age" min="18">
+                	<p> Rent Cost (Thai Bath)</p>
+                	<ul class="nav nav-pills">
+                      <li role="presentadasftion" class="active"><a href="#">Less than 5000</a></li>
+                          <li role="presentation" class="active"><a href="#">5001 - 7500</a></li>
+                          <li role="presentation"><a href="#">7501 - 10000</a></li>
+                          <li role="presentation"><a href="#">Unlimited</a></li>
+                    </ul>
+                    <p>
+                    	Rent Period (Month)
+                    </p>
+                    <ul class="nav nav-pills">
+                          <li role="presentadasftion"><a href="#"><input type="number"></a></li>
+                    </ul>
+                  <p>Limitation (Choose if you agree)</p>
+                    <ul class="nav nav-pills">
+                      <li role="presentadasftion" class="active"><a href="#">Smoke</a></li>
+                              <li role="presentation" class="active"><a href="#">Pets</a></li>
+                              <li role="presentation"><a href="#">Chrilden</a></li>
+                              <li role="presentation"><a href="#">Party</a></li>
+                              <li role="presentation"><a href="#">Snoring</a></li>
+                    </ul>   
+                    <p>Date Moving</p>
+                    <div> 
+                    	<input type="date" name="date_moving">
+                    </div>
+                    <p>Who have room</p>
+                    <ul class="nav nav-pills">
+                      <li role="presentadasftion" class="active"><a href="#">Have</a></li>
+                              <li role="presentation"><a href="#">Do not have</a><br/></li>
+                    </ul>   
+              </div>
+                <div class="col-xs-12 col-sm-6 col-md-8" style="border:thin">
+                	<ul class="nav nav-pills">
+                          <li role="presentadasftion" class="active"><a href="#">Find Friend</a></li>
+                          <li role="presentation"><a href="#">Find Room</a></li>
+                    </ul>
+                    <br/>
+                    <div class="col-xs-6 col-md-3"> 
+                    	<img src="img/Friend_Match/f1.jpg" width="130" height="140">	                 
+                    </div>
+                    <div class="col-md-3"> 
+                    	<P>Josh Lagu <img src="img/Flag_of_England.png" width="25" height="25"></P>
+                        <p><img src="img/Add_Friend-512.png" width="50"><img src="img/chaticon.png" width="50"> </p>                
+                    </div>
+                </div>
               
             </div>
         </div>
