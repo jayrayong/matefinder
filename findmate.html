@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style>
+    table.line{line-height:120%}
+	
+	</style>
+    <title>Clean Blog - Sample Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="findmate.html">Find mate</a>
+                    </li>
+                    <li>
+                        <a href="findroom.html">Find room</a>
+                    </li>
+                    <li>
+                        <a href="request.html">Request</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Log out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/sfm.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                      <h1>ค้นหาเพื่อนร่วมห้อง</h1>
+                      <h2 class="subheading">เลือกคุณสมบัติ </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <form>
+                   <table class="line" style="width:100%" align="center" cellpadding="10">
+                          <tr>
+                            <td>เพศ</td>
+                            <td> <input type = "radio" name="sex" value="male"> Male
+								 <input type = "radio" name="sex" value="female"> female
+                            </td> 
+                          </tr>
+                          <tr>
+                          	<td>อายุที่ต้องการ</td>
+                            <td><input type="number" name="age" size="2" min="18">ถึง<input type="number" name="age" size="10" min="18" ></td>
+                          </tr>
+                          
+                          <tr>
+                          	<td>ประเทศ</td>
+                            <td><select>
+                          	  <option value="japan">ประเทศญี่ปุ่น</option>
+                              <option value="thai">ประเทศไทย</option> 
+                              <option value="laos">ประเทศลาว</option>
+                              <option value="england">ประเทศอังกฤษ</option>
+                            </select></td>
+                          </tr>
+                           <tr>
+                          	<td>จังหวัด</td>
+                            <td><input type="text" name="location"></td>
+                          </tr>
+                          <tr>
+                          	<td>อำเภอ</td>
+                            <td><input type="text" name="address"></td>
+                          </tr>
+                         
+                          <tr>
+                          	<td>สิ่งที่สนใจ</td>
+                            <td><input type="text" name="interrest"></td>
+                          </tr>
+                          <tr>
+                          	<td>ความสะอาด</td>
+                            <td><select name="clean">
+                                  <option value="lv1">สกปรก</option>
+                                  <option value="lv2">สะอาดน้อย</option>
+                                  <option value="lv3">สะอาดกลาง</option>
+                                  <option value="lv4">สะอาดมาก</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>การกรน</td>
+                            <td><select name="snoring">
+                                  <option value="lv1">ไม่กรน</option>
+                                  <option value="lv2">นอนกรนน้อย</option>
+                                  <option value="lv3">นอนกรนปานกลาง</option>
+                                  <option value="lv4">นอนกรนมาก</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>ปาตี้</td>
+                            <td><select name="party">
+                                  <option value="lv1">ไม่จัดเลย</option>
+                                  <option value="lv2">เดือนละ 1-2 ครั้ง</option>
+                                  <option value="lv3">เดือนละ 3-4 ครั้ง</option>
+                                  <option value="lv4">มากกว่า 5 ครั้งต่อเดือน</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>สูบบุหรี่</td>
+                            <td><select name="smoke">
+                                  <option value="lv1">ไม่สูบ</option>
+                                  <option value="lv2">สูบเล็กน้อย</option>
+                                  <option value="lv3">สูบปานกลางลาง</option>
+                                  <option value="lv4">สูบหนักมาก</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>วันย้ายเข้า</td>
+                            <td><select name="datemoring">
+                                  <option value="lv1">?</option>
+                                  <option value="lv2">?</option>
+                                  <option value="lv3">?</option>
+                                  <option value="lv4">?</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>ค่าเช่า</td>
+                            <td><select name="rent_cost">
+                                  <option value="lv1">น้อยกว่า 5000 บาท ต่อเดือน</option>
+                                  <option value="lv2">5001 - 7500 บาท ต่อเดือน</option>
+                                  <option value="lv3">7501 - 10000 บาท ต่อเดือน</option>
+                                  <option value="lv4">มากกว่า 10000 บาทต่อเดือน</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>ประเภทห้อง</td>
+                            <td><select name="room_type">
+                                  <option value="1">ต้องการ 1 คน</option>
+                                  <option value="2">ต้องการ 2 คน</option>
+                                  <option value="3">ต้องการ 3 คน</option>
+                                  <option value="4">ต้องการมากกว่า 4 คน</option>
+                                </select></td>
+                          </tr>
+                          <tr>
+                          	<td>ช่วงเวลาที่เช่า</td>
+                            <td><input type="text" name="rent_period"> เดือน</td>
+                          </tr>
+                       <tr>
+                          	<td>เลี้ยงสัตว์</td>
+                            <td><input type="radio" name="animal" value="yes">เลี้ยง
+                            <input type="radio" name="animal" value="no">ไม่เลี้ยง</td>
+                       </tr>
+                       <tr>
+                          	<td>มีลูกหรือไม่</td>
+                            <td><input type="radio" name="chrilden" value="yes">มี
+                            <input type="radio" name="chrilden" value="no">ไม่มี</td>
+                       </tr>
+                       <tr>
+                          	<td>สถานะ</td>
+                            <td></td>
+                       </tr>
+                       <tr>
+                          	<td>ห้องพัก</td>
+                            <td><input type="radio" name="room" value="yes">มี
+                            <input type="radio" name="room" value="no">ไม่มี</td>
+                       </tr>
+                       <tr>
+                       	<td></td>
+                        <td><input type="button" value="Search"></td>
+                       </tr>
+                        </table> 
+                       </form>
+                                
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
