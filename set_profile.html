@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Sample Post</title>
+    <title>Setup your profile</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -66,8 +66,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                      <h1>โปรดกรอกข้อมูลของท่าน</h1>
-                      <h2 class="subheading">เพื่อเพิ่มประสิทธิภาพในการค้นหาเพื่อน</h2>
+                      <h1>Please enter your information</h1>
+                      <h2 class="subheading">To increase efficiency in finding a roommate</h2>
                     </div>
                 </div>
             </div>
@@ -78,143 +78,187 @@
     <article>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <hr>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 well">
                   <form>
-                   <table style="width:80%" align="center">
-                          <tr>
-                            <td> เพศ</td>
-                            <td>  <input type = "radio" name="sex" value="male"> Male
-								 <input type = "radio" name="sex" value="female"> female
-                            </td> 
-                          </tr>
-                           <tr>
-                          	<td>วัน เดือน ปี เกิด</td>
-                            <td><input type="date" name="bday"></td>
-                          </tr>
-                          <tr>
-                            <td> อาชีพ</td>
-                            <td> <select>
-                              <option value="student">นักศึกษา</option>
-                              <option value="bureaucrat">ข้าราชการ</option>
-                              <option value="doctor">แพทย์</option>
-                              <option value="owner">ธุรกิจส่วนตัว</option>
-                            </select></td>
-                          </tr>
-                          <tr>
-                          	<td>Country</td>
-                            <td><select>
-                          	  <option value="japan">ประเทศญี่ปุ่น</option>
-                              <option value="thai">ประเทศไทย</option> 
-                              <option value="laos">ประเทศลาว</option>
-                              <option value="england">ประเทศอังกฤษ</option>
-                            </select></td>
-                          </tr>
-                         <tr>
-                          	<td>สถานที่</td>
-                            <td><input type="text" name="location"></td>
-                          </tr>
-                          <tr>
-                          	<td>ที่อยู่</td>
-                            <td><input type="text" name="address"></td>
-                          </tr>
-                          
-                          <tr>
-                          	<td>สิ่งที่สนใจ</td>
-                            <td><input type="text" name="interrest"></td>
-                          </tr>
-                          <tr>
-                          	<td>ความสะอาด</td>
-                            <td><select name="clean">
-                                  <option value="lv1">สกปรก</option>
-                                  <option value="lv2">สะอาดน้อย</option>
-                                  <option value="lv3">สะอาดกลาง</option>
-                                  <option value="lv4">สะอาดมาก</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>การกรน</td>
-                            <td><select name="snoring">
-                                  <option value="lv1">ไม่กรน</option>
-                                  <option value="lv2">นอนกรนน้อย</option>
-                                  <option value="lv3">นอนกรนปานกลาง</option>
-                                  <option value="lv4">นอนกรนมาก</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>ปาตี้</td>
-                            <td><select name="party">
-                                  <option value="lv1">ไม่จัดเลย</option>
-                                  <option value="lv2">เดือนละ 1-2 ครั้ง</option>
-                                  <option value="lv3">เดือนละ 3-4 ครั้ง</option>
-                                  <option value="lv4">มากกว่า 5 ครั้งต่อเดือน</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>สูบบุหรี่</td>
-                            <td><select name="smoke">
-                                  <option value="lv1">ไม่สูบ</option>
-                                  <option value="lv2">สูบเล็กน้อย</option>
-                                  <option value="lv3">สูบปานกลางลาง</option>
-                                  <option value="lv4">สูบหนักมาก</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>วันที่ย้ายเข้า</td>
-                            <td><select name="datemoring">
-                                  <option value="lv1">?</option>
-                                  <option value="lv2">?</option>
-                                  <option value="lv3">?</option>
-                                  <option value="lv4">?</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>ช่วงราคา</td>
-                            <td><select name="rent_cost">
-                                  <option value="lv1">น้อยกว่า 5000 บาท ต่อเดือน</option>
-                                  <option value="lv2">5001 - 7500 บาท ต่อเดือน</option>
-                                  <option value="lv3">7501 - 10000 บาท ต่อเดือน</option>
-                                  <option value="lv4">มากกว่า 10000 บาทต่อเดือน</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>ประเภทห้อง</td>
-                            <td><select name="room_type">
-                                  <option value="1">ต้องการ 1 คน</option>
-                                  <option value="2">ต้องการ 2 คน</option>
-                                  <option value="3">ต้องการ 3 คน</option>
-                                  <option value="4">ต้องการมากกว่า 4 คน</option>
-                                </select></td>
-                          </tr>
-                          <tr>
-                          	<td>ระยะเวลาการเช่า</td>
-                            <td><input type="text" name="rent_period"> เดือน</td>
-                          </tr>
-                       
-                       <tr>
-                          	<td>เลี้ยงสัตว์</td>
-                            <td><input type="radio" name="animal" value="yes">เลี้ยง
-                            <input type="radio" name="animal" value="no">ไม่เลี้ยง</td>
-                       </tr>
-                       <tr>
-                          	<td>มีลูกหรือไม่</td>
-                            <td><input type="radio" name="chrilden" value="yes">มี
-                            <input type="radio" name="chrilden" value="no">ไม่มี</td>
-                       </tr>
-                       <tr>
-                          	<td>ระดับการศึกษา</td>
-                            <td></td>
-                       </tr>
-                       <tr>
-                          	<td>สถานะ</td>
-                            <td></td>
-                       </tr>
-                       <tr>
-                       	<td></td>
-                        <td><input type="button" value="Save"></td>
-                       </tr>
-                        </table> 
+                  	<div class="col-md-6">
+                    	<p>Gender</p>
+                        <p>Date of Birth</p>
+                        <p>Career</p>
+                        <p>Nationality</p>
+                        <p>District</p>
+                        <p>Sub-district</p>
+                        <p>The Interest</p>
+                        <p>Cleanliness</p>
+                        <p>Snoroing</p>
+                        <p>Party habits</p>
+                        <p>Smoking in room</p>
+                        <p>Moving Date</p>
+                        <p>Price range</p>
+                        <p>How many people per room?</p>
+                        <p>Rent Periods</p>
+                        <p>Domestic animal</p>
+                        <p>Chrildren</p>
+                        <p>Education</p>
+                        <p>Status</p>
+                        <p>Do you already have a room?</p>
+                     </div><div class="col-md-6">
+                    	<p><input type = "radio" name="gender" value="male"> Male
+								 <input type = "radio" name="sex" value="female"> Female</p>
+                        <p><input type="date" name="bday"></p>
+                        <p><select>
+                              <option value="student">Student</option>
+                              <option value="bureaucrat">Bureaucrat</option>
+                              <option value="officer">Officer</option>
+                            </select></p>
+                        <p><select>
+                              <option value="thai">Thai</option> 
+                              <option value="japan">Japanese</option>
+                              <option value="laos">Laos</option>
+                              <option value="england">English</option>
+                            </select></p>
+                        <p><select>
+                             <option value="dist0">Not specified</option> 
+                              <option value="dist1">Phra Nakhon District</option> 
+                              <option value="dist2">Bang Bon District</option>
+                              <option value="dist3">Bang Kapi District</option>
+                              <option value="dist4">Bang Khae District</option>
+                              <option value="dist5">Bang Khen District</option> 
+                              <option value="dist6">Bang Kho Laem District</option>
+                              <option value="dist7">Bang Khun Thian District</option>
+                              <option value="dist8">Bang Na District</option>
+                              <option value="dist9">Bang Phlat District</option> 
+                              <option value="dist10">Bang Rak District</option>
+                              <option value="dist11">Bang Sue District</option>
+                              <option value="dist12">Bangkok Noi District</option>
+                              <option value="dist13">Bangkok Yai District</option> 
+                              <option value="dist14">Bueng Kum District</option>
+                              <option value="dist15">Chatuchak District</option>
+                              <option value="dist16">Chom Thong District</option>
+                              <option value="dist17">Din Daeng District</option> 
+                              <option value="dist18">Don Mueang District</option>
+                              <option value="dist19">Dusit District</option>
+                              <option value="dist20">Huai Khwang District</option>
+                              <option value="dist21">Khan Na Yao District</option> 
+                              <option value="dist22">Khlong Sam Wa District</option>
+                              <option value="dist23">Khlong San District</option>
+                              <option value="dist24">Khlong Toei District</option>
+                              <option value="dist25">Lak Si District</option> 
+                              <option value="dist26">Lat Krabang District</option>
+                              <option value="dist27">Lat Phrao District</option>
+                              <option value="dist28">Min Buri District</option>
+                              <option value="dist29">Nong Chok District</option> 
+                              <option value="dist30">Nong Khaem District</option>
+                              <option value="dist31">Pathum Wan District</option>
+                              <option value="dist32">Phasi Charoen District</option>
+                              <option value="dist33">Phaya Thai District</option> 
+                              <option value="dist34">Phra Khanong District</option>
+                              <option value="dist35">Pom Prap Sattru Phai District</option>
+                              <option value="dist36">Prawet District</option>
+                              <option value="dist37">Rat Burana District</option> 
+                              <option value="dist38">Ratchathewi District</option>
+                              <option value="dist39">Sai Mai District</option>
+                              <option value="dist40">Samphanthawong District</option>
+                              <option value="dist41">Saphan Sung District</option> 
+                              <option value="dist42">Sathon District</option>
+                              <option value="dist43">Suan Luang District</option>
+                              <option value="dist44">Taling Chan District</option>
+                              <option value="dist45">Thawi Watthana District</option> 
+                              <option value="dist46">Thon Buri District</option>
+                              <option value="dist47">Thung Khru District</option>
+                              <option value="dist48">Wang Thonglang District</option>
+                              <option value="dist48">Vadhana District</option>
+                              <option value="dist48">Yan Nawa District</option>
+                            </select></p>
+                        <p><select>
+                              <option value="subdist0">Not specified</option>
+                                <option value="subdist1">Phra Borom Maha Ratchawang</option> 
+                              <option value="subdist2">Wang Burapha Phirom</option>
+                              <option value="subdist3">Wat Ratchabophit</option>
+                              <option value="subdist4">Samran Rat</option>
+                              <option value="subdist5">San Chao Pho Suea</option> 
+                              <option value="subdist6">Sao Chingcha</option>
+                              <option value="subdist7">Bowon Niwet</option>
+                              <option value="subdist8">Talat Yot</option>
+                              <option value="subdist9">Chana Songkhram</option> 
+                              <option value="subdist10">Ban Phan Thom</option>
+                              <option value="subdist11">Bang Khun Phrom</option>
+                              <option value="subdist12">Wat Sam Phraya</option>
+                             </select></p>
+                        <p><input type="text" name="interrest"></p>
+                        <p><select name="clean">
+                                  <option value="lv1">Dirty</option>
+                                  <option value="lv2">Cleasn less</option>
+                                  <option value="lv3">Clean medium</option>
+                                  <option value="lv4">Very clean</option>
+                                </select></p>
+                        <p><select name="snoring">
+                                  <option value="lv1">No snoring</option>
+                                  <option value="lv2">Little snoring</option>
+                                  <option value="lv3">Snoring mediam</option>
+                                  <option value="lv4">Snoring more</option>
+                                </select></p>
+                        <p><select name="party">
+                                  <option value="lv1">Not at all</option>
+                                  <option value="lv2">1-2 times per month</option>
+                                  <option value="lv3">3-4 times per month</option>
+                                  <option value="lv4">More than 5 times per month</option>
+                                </select></p>
+                                <p><select name="smoke">
+                                  <option value="lv1">Do no smoke</option>
+                                  <option value="lv2">Smoke slightly</option>
+                                  <option value="lv3">Moderate smoke</option>
+                                  <option value="lv4">Heavy smoke</option>
+                                </select> </p>
+                                <p><input type="date" name="movingdate"> </p>
+                                <p><select name="price_range">
+                                  <option value="lv1">Less than 5000 bath per month</option>
+                                  <option value="lv2">5001 - 7500 bath per month</option>
+                                  <option value="lv3">7501 - 10000 bath per month</option>
+                                  <option value="lv4">More than 10000 bath per month</option>
+                                </select> </p>
+                                <p><select name="room_type">
+                                  <option value="1">1 person</option>
+                                  <option value="2">2 people</option>
+                                  <option value="3">3 people</option>
+                                  <option value="4">More than  4 people</option>
+                                </select> </p>
+                                <p><select name="room_periods">
+                                  <option value="1">1 month</option>
+                                  <option value="2">2 months</option>
+                                  <option value="3">3 months</option>
+                                  <option value="4">4 months</option>
+                                  <option value="4">5 months</option>
+                                  <option value="4">6 months</option>
+                                  <option value="4">7 months</option>
+                                  <option value="4">8 months</option>
+                                  <option value="4">9 months</option>
+                                  <option value="4">10 months</option>
+                                  <option value="4">11 months</option>
+                                  <option value="4">12 months</option>
+                                  <option value="4">More than 12  months</option>
+                                </select> </p>
+                                <p> <input type="radio" name="animal" value="yes">Yes
+                            <input type="radio" name="animal" value="no">No</p>
+                                <p><td>Children</td>
+                            <td><input type="radio" name="chrilden" value="yes">Yes
+                            <input type="radio" name="chrilden" value="no">No</td> </p>
+                                <p><select name="education">
+                                  <option value="1">Senior High School</option>
+                                  <option value="2">Bachelor's degree</option>
+                                  <option value="3">Master'degree</option>
+                                  <option value="4">Doctor of Philosophy</option>
+                                </select> </p>
+                                <p><select name="status">
+                                  <option value="1">Single</option>
+                                  <option value="2">In relationship</option>
+                                  <option value="3">Married</option>
+                                </select> </p>
+                                <p> <input type = "radio" name="have_room" value="yes"> Yes
+                                     <input type = "radio" name="have_room" value="no"> No</p>
+                       		 </div>
                        </form>
-                                
+                             <p align="center"> <input type="button" value="Save"> </p>   
                 </div>
             </div>
         </div>

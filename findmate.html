@@ -40,14 +40,36 @@
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<script type="text/javascript">
+	
+	function showMate(){
+	$("#menu").fadeOut("fast");
+	$("#loading").fadeIn("fast");
+	setTimeout(function(){ $("#loading").fadeOut("fast")}, 2000);
+   setTimeout(function(){ $("#roomate").fadeIn( "slow" );},2500);
+   setTimeout(function(){ $("#menu").fadeIn( "slow" );},2500);
+};
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("1")) {
+        image.src = "./img/c2.png";
+    } else {
+        image.src = "./img/c1.png";
+    }
+}
+;
+
+</script>
 
 </head>
 
-<body>
+<body background="img/wh_bg.jpg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" >
+        <div class="container-fluid" id="sidebar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -100,11 +122,12 @@
 
     <!-- Post Content -->
     <article>
-        <div class="container">
-            <div class="row">              	
-				<div class="col-xs-6 col-md-4 well">
+	<div align="center" style="display:none" id="loading"><img src="./img/page-loader.gif" ></img></div>
+         <div class="container" id="menu">
+				 <div class="row">    
+				<div class="col-xs-9 col-md-4" style="border:solid">
                 	<p style="font:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> Location </p>
-                    <div> <img src="img/mapfind.PNG" width="300"></div>
+                    <div> <img src="img/map.jpg" width="300"></div>
                     <p> 
                     	Area 
                     </p>
@@ -130,8 +153,13 @@
                 	<ul class="nav nav-pills">
                       <li role="presentadasftion" class="active"><a href="#">Less than 5000</a></li>
                           <li role="presentation" class="active"><a href="#">5001 - 7500</a></li>
+
+                          <li role="presentation" class="active"><a href="#">7501 - 10000</a></li>
+                          <li role="presentation" class="active"><a href="#">Unlimited</a></li>
+
                           <li role="presentation"><a href="#">7501 - 10000</a></li>
                           <li role="presentation"><a href="#">Unlimited</a></li>
+
                     </ul>
                     <p>
                     	Rent Period (Month)
@@ -157,46 +185,79 @@
                               <li role="presentation"><a href="#">Do not have</a><br/></li>
                     </ul>   
               </div>
-                <div class="col-xs-12 col-sm-6 col-md-8 well">
+
+                   <div class="col-xs-12 col-sm-6 col-md-8" style="border:thin">
                 	<ul class="nav nav-pills">
-                          <li role="presentadasftion" class="active"><a href="#">Find Friend</a></li>
+                          <li role="presentadasftion" class="active"><a href="#" onclick="showMate()">Find Friend</a></li>
                     </ul>
                     <br/>
-                    <div class="col-xs-6 col-md-3"> 
-                    	<img src="img/Friend_Match/f1.jpg" width="150" height="">	                 
+                    <div class="col-xs-6 col-md-12"> 
+                    	<div style="display:none" id="roomate" >
+	<div align="center" ><p style="font-size:36px">Search Result</p></div>
+	<div class="row" align="center" >
+                  <div class="col-md-4"  ><img src="./img/Friend_Match/f1.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f2.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f3.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+               </div>
+			   <div class="row" align="center">
+			   <div class="col-md-4" style="font-size:20px"><p>Jonh Smith</p><input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px" ><p>Michel Angelo</p><input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px"><p>Mangkorn Junroongrit</p><input type="button" value="Send Request"></div>
+			   </div></br>
+               <div class="row" align="center">
+                  <div class="col-md-4"><img src="./img/Friend_Match/f4.png" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f5.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f6.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+               </div></br>
+			   <div class="row" align="center">
+			   <div class="col-md-4" style="font-size:20px"><p>Ben Affeck</p> <input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px" ><p>Jordi Alba</p><input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px"><p>N'Gollo Gante</p><input type="button" value="Send Request"></div>
+			   </div></br>
+               <div class="row" align="center">
+                  <div class="col-md-4"><img src="./img/Friend_Match/f7.png" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f8.jpg" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+                  <div class="col-md-4"><img src="./img/Friend_Match/f9.png" class = "img-rounded" width="150" height="150" data-toggle="modal" data-target="#myModal" ></div>
+               </div></br>
+			   <div class="row" align="center">
+			   <div class="col-md-4" style="font-size:20px"><p>Luka Modric</p><input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px" ><p>Karim Benzema</p><input type="button" value="Send Request"></div>
+			   <div class="col-md-4"style="font-size:20px"><p>Francesco Totti</p><input type="button" value="Send Request"></div>
+			   </div></br>
+	</div>                
                     </div>
-                    <div class="col-md-4"> 
-                    	<P>Josh Lagu <img src="img/Flag_of_England.png" width="25" height="25" alt="Endgland"></P>
-                        <p><img src="img/Add_Friend-512.png" width="40" alt="Send Request"><img src="img/chaticon.png" width="30" alt="Send Message"> <img src="img/Button-Favorite-icon.png" width="30" height="30" alt="Add to Interest"><img src="img/compare-icon-compared.png" width="30" alt="Compare"> </p>
-                    </div>
-                    <div class="col-md-5" style="background-color:#ABC0F0">
-                    	<div>
-                        	<p style="line-height:80%"> Rent Cost : 7501 - 10000</p>
-                            <p style="line-height:80%">Period : 12 Month</p>
-                            <p style="line-height:80%">Date Moning : 1 Jan 2016 </p>            
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3"> 
-                    	<img src="img/Friend_Match/f2.jpg" width="150">	                 
-                    </div>
-                    <div class="col-md-4"> 
-                    	<P>Ben Cannas <img src="img/Flag_of_England.png" width="25" height="25" alt="Endgland"></P>
-                        <p><img src="img/Add_Friend-512.png" width="40" alt="Send Request"><img src="img/chaticon.png" width="30" alt="Send Message"> <img src="img/Button-Favorite-icon.png" width="30" height="30" alt="Add to Interest"><img src="img/compare-icon-compared.png" width="30" alt="Compare"> </p>
-                    </div>
-                    <div class="col-md-5" style="background-color:#ABC0F0">
-                    	<div>
-                        	<p style="line-height:80%"> Rent Cost : 5001-7500</p>
-                            <p style="line-height:80%">Period : 6 Month</p>
-                            <p style="line-height:80%">Date Moning : 8 FEB 2016 </p>            
-                        </div>
-                    </div>
-                    
+                   
                 </div>
-              
-            </div>
+				</div>
+
+       
         </div>
     </article>
-
+	
+	
+	
+	<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Profile Details</h4>
+      </div>
+      <div class="modal-body">
+      <img src="./img/Friend_Match/f1.jpg" class = "img-rounded" width="450" height="450"></img>
+	  
+	  <p>Name : Jonh Lastname: Smith</p>
+	 <p> Age: 22     Country: England</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div  style="position:absolute;top:1000px;right:0px"><img src="./img/c1.png" onclick="changeImage()" id="myImage"></div>
     <hr>
 
     <!-- Footer -->
@@ -244,6 +305,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
 
 </body>
 
